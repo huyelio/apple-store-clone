@@ -1,0 +1,71 @@
+/* =============================================
+   STYLE.CSS — Các style riêng cho từng trang
+   File này dành cho nội dung phần <main>
+   ============================================= */
+
+/* ---------- Placeholder (tạm thời) ---------- */
+.main-content {
+  min-height: calc(100vh - 44px); /* Chiếm hết chiều cao còn lại sau header */
+}
+
+.page-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  font-size: 18px;
+  color: #86868b;
+  letter-spacing: -0.02em;
+}
+
+.header-shop {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  padding: 8rem 10rem;
+  gap: 3rem;
+}
+
+.left-header-shop {
+  font-size: 80px;
+  font-weight: 600;
+  color: rgb(8, 130, 124);
+  line-height: 1.05;
+  letter-spacing: -1.2px;
+}
+
+.right-header-shop-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.right-header-shop {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(8, 130, 124);
+  text-align: end;
+}
+
+.space-box {
+  width: 5rem;
+  height: 0.5rem;
+}
+
+.right-header-shop-text {
+  font-size: 28px;
+  font-weight: 600;
+  color: rgb(29, 29, 31);
+}
+
+.right-header-shop-link {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(0, 102, 204);
+  position: relative;
+  float: right;
+  margin-right: 3rem;
+}

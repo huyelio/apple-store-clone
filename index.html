@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Store Giáo dục - Apple (VN)</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- ===================================================
+         GLOBAL HEADER
+         Thanh điều hướng chính (sticky, nền tối mờ)
+    =================================================== -->
+    <header class="global-header">
+      <nav class="global-nav" aria-label="Menu toàn cục">
+        <ul class="global-nav__top-list">
+          <li class="global-nav__top-item">
+            <a href="#" class="global-nav__link"
+              >Trang chủ cửa hàng giáo dục
+            </a>
+          </li>
+          <li class="global-nav__top-item">
+            <a href="#" class="global-nav__link">Thoát</a>
+          </li>
+        </ul>
+        <ul class="global-nav__list">
+          <!-- Logo Apple -->
+          <li class="global-nav__item global-nav__item--logo">
+            <a
+              href="https://www.apple.com/vn/"
+              class="global-nav__link"
+              aria-label="Apple"
+            >
+              <!-- Apple logo SVG -->
+              <svg
+                class="icon-apple"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 814 1000"
+                aria-hidden="true"
+              >
+                <path
+                  d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105.9-57.8-155.5-127.4C46 376.6 0 246.2 0 121.8c0-74.5 27.9-144.3 79.7-194.2 51.8-50 113.5-78.2 183.4-78.2 71 0 130.9 42.3 173.6 42.3 41 0 112.2-44.4 194.6-44.4 28.2 0 127.3 2.6 194.6 96zM549.5 94.7c-.6-53.1 21.8-107.5 55.9-146.2 33.4-36.7 89-63.7 135-66.5 2.6 51.2-14.1 103.3-47.7 140.5-33.4 37.6-85.9 66.5-143.2 72.2z"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <!-- Các mục điều hướng chính -->
+          <li class="global-nav__item">
+            <a href="#" class="global-nav__link">Cửa hàng</a>
+          </li>
+          <li class="global-nav__item">
+            <a href="#" class="global-nav__link">Mac</a>
+          </li>
+          <li class="global-nav__item">
+            <a href="#" class="global-nav__link">iPad</a>
+          </li>
+          <li class="global-nav__item">
+            <a href="#" class="global-nav__link">iPhone</a>
+          </li>
+          <li class="global-nav__item">
+            <a href="#" class="global-nav__link">Watch</a>
+          </li>
+          <li class="global-nav__item">
+            <a href="#" class="global-nav__link">AirPods</a>
+          </li>
+          <li class="global-nav__item">
+            <a href="#" class="global-nav__link">TV &amp; Nhà</a>
+          </li>
+          <li class="global-nav__item">
+            <a href="#" class="global-nav__link">Giải trí</a>
+          </li>
+          <li class="global-nav__item">
+            <a href="#" class="global-nav__link">Phụ kiện</a>
+          </li>
+          <li class="global-nav__item">
+            <a href="#" class="global-nav__link">Hỗ trợ</a>
+          </li>
+
+          <!-- Biểu tượng Tìm kiếm -->
+          <li class="global-nav__item global-nav__item--icon">
+            <a
+              href="#"
+              class="global-nav__link"
+              aria-label="Tìm kiếm apple.com"
+            >
+              <svg
+                class="icon-search"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                />
+              </svg>
+            </a>
+          </li>
+
+          <!-- Biểu tượng Giỏ hàng -->
+          <li class="global-nav__item global-nav__item--icon">
+            <a href="#" class="global-nav__link" aria-label="Giỏ hàng">
+              <svg
+                class="icon-bag"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M19 6h-2c0-2.76-2.24-5-5-5S7 3.24 7 6H5c-1.1 0-1.99.9-1.99 2L3 20c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-7-3c1.66 0 3 1.34 3 3H9c0-1.66 1.34-3 3-3zm0 10c-1.66 0-3-1.34-3-3h2c0 .55.45 1 1 1s1-.45 1-1h2c0 1.66-1.34 3-3 3z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ===================================================
+         MAIN CONTENT
+         Nội dung trang sẽ được xây dựng từng bước
+    =================================================== -->
+    <main class="main-content">
+      <section class="page-intro">...</section>
+      <section class="section section-shop-container">
+        <div class="header-shop">
+          <div class="left-header-shop">Cửa Hàng Giáo Dục</div>
+          <div class="right-header-shop">
+            <div class="right-header-shop-text-container">
+              <div class="space-box"></div>
+              <p class="right-header-shop-text">
+                Những phương tiện hỗ trợ học tập tuyệt vời nhất.
+              </p>
+            </div>
+            <a href="#" class="right-header-shop-link"
+              >Kết nối với chuyên gia<span class="fa-solid fa-arrow-up-right"></
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section class="section section-productnav">...</section>
+      <section class="section section-cardsshelf">
+        <div class="section-cardsshelf-header">...</div>
+        <div class="section-cardsshelf-scroller">...</div>
+      </section>
+      <section class="section section-benefits">...</section>
+      <section class="section section-promotions">...</section>
+      <section class="section section-favorites">...</section>
+      <section class="section section-accessories">...</section>
+      <section class="section section-card-scroller">...</section>
+      <section class="section section-links">...</section>
+    </main>
+
+    <!-- ===================================================
+         GLOBAL FOOTER
+         Chân trang (skeleton, sẽ hoàn thiện sau)
+    =================================================== -->
+    <footer class="global-footer">
+      <div class="footer-legal">
+        <p>
+          Thông tin trên trang web này áp dụng chỉ cho Việt Nam. Không phải tất
+          cả sản phẩm, dịch vụ đều có ở mọi vùng lãnh thổ.
+        </p>
+      </div>
+
+      <div class="footer-main">
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h3 class="footer-col__title">Mua sắm và tìm hiểu</h3>
+            <ul class="footer-col__list">
+              <li><a href="#">Store</a></li>
+              <li><a href="#">Mac</a></li>
+              <li><a href="#">iPad</a></li>
+              <li><a href="#">iPhone</a></li>
+              <li><a href="#">Watch</a></li>
+              <li><a href="#">AirPods</a></li>
+              <li><a href="#">TV &amp; Nhà</a></li>
+              <li><a href="#">AirTag</a></li>
+              <li><a href="#">Phụ kiện</a></li>
+              <li><a href="#">Quà tặng</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-col__title">Dịch vụ Apple</h3>
+            <ul class="footer-col__list">
+              <li><a href="#">Apple Music</a></li>
+              <li><a href="#">Apple TV+</a></li>
+              <li><a href="#">Apple Arcade</a></li>
+              <li><a href="#">iCloud</a></li>
+              <li><a href="#">Apple Books</a></li>
+              <li><a href="#">App Store</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-col__title">Tài khoản</h3>
+            <ul class="footer-col__list">
+              <li><a href="#">Quản lý Apple ID</a></li>
+              <li><a href="#">App Store</a></li>
+              <li><a href="#">iCloud.com</a></li>
+              <li><a href="#">Apple Store</a></li>
+              <li><a href="#">Apple TV+</a></li>
+              <li><a href="#">Apple Music</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-col__title">Dành cho doanh nghiệp</h3>
+            <ul class="footer-col__list">
+              <li><a href="#">Apple và doanh nghiệp</a></li>
+              <li><a href="#">Mua cho doanh nghiệp</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-col__title">Dành cho giáo dục</h3>
+            <ul class="footer-col__list">
+              <li><a href="#">Apple và giáo dục</a></li>
+              <li><a href="#">Mua cho bậc đại học</a></li>
+              <li><a href="#">Mua cho trường K-12</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3 class="footer-col__title">Về Apple</h3>
+            <ul class="footer-col__list">
+              <li><a href="#">Newsroom Apple</a></li>
+              <li><a href="#">Lãnh đạo Apple</a></li>
+              <li><a href="#">Thông tin nhà đầu tư</a></li>
+              <li><a href="#">Đạo đức và tuân thủ</a></li>
+              <li><a href="#">Sự kiện</a></li>
+              <li><a href="#">Liên hệ Apple</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          Copyright &copy; 2025 Apple Inc. Bảo lưu mọi quyền.
+        </p>
+        <ul class="footer-bottom__links">
+          <li><a href="#">Chính sách quyền riêng tư</a></li>
+          <li><a href="#">Điều khoản sử dụng</a></li>
+          <li><a href="#">Bán hàng và hoàn tiền</a></li>
+          <li><a href="#">Pháp lý</a></li>
+          <li><a href="#">Sơ đồ trang web</a></li>
+        </ul>
+        <p class="footer-country">Việt Nam</p>
+      </div>
+    </footer>
+  </body>
+</html>
