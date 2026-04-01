@@ -29,6 +29,8 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -36,6 +38,8 @@ body {
   color: var(--color-text);
   background: var(--color-bg);
   line-height: 1.5;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 img {

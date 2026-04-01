@@ -11,10 +11,10 @@
   position: relative; /* Dính ở đầu khi cuộn trang */
   top: 0;
   z-index: 9999; /* Luôn nằm trên mọi nội dung */
-  height: 44px;
+  height: auto;
 
   /* Nền tối bán trong suốt + hiệu ứng blur (kính mờ) */
-  background-color: white;
+  background-color: #F0F0F2;
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
 }
@@ -48,7 +48,7 @@
 
 /* ---------- Danh sách các mục nav ---------- */
 .global-nav__list {
-  height: 100%;
+  height: 44px;
   display: flex;
   align-items: center; /* Căn giữa theo trục dọc */
   justify-content: space-between; /* Phân bố đều theo trục ngang */
@@ -97,13 +97,13 @@
 .icon-apple {
   width: 14px;
   height: 17px;
-  fill: black;
+  fill: currentColor;
   display: block;
   transition: fill 0.15s ease;
 }
 
 .global-nav__item--logo .global-nav__link:hover .icon-apple {
-  fill: black;
+  fill: currentColor;
 }
 
 /* =============================================

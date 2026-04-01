@@ -5,9 +5,11 @@
 
 /* ---------- Placeholder (tạm thời) ---------- */
 .main-content {
-  background-color: #f5f5f7;
+  background-color: #F5F5F7;
   min-height: calc(100vh - 44px); /* Chiếm hết chiều cao còn lại sau header */
 }
+ 
+
 
 .page-placeholder {
   display: flex;
@@ -69,6 +71,11 @@
   position: relative;
   float: right;
   margin-right: 3rem;
+}
+
+.right-header-shop-link .fa-solid {
+  margin-left: 0.35rem;
+  font-size: 0.9em;
 }
 
 /* =============================================
@@ -160,6 +167,8 @@
   scrollbar-width: none;
   padding: 1rem 0.5rem;
   padding-left: 5rem;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 .cardsshelf-scroller-list::-webkit-scrollbar {
@@ -173,6 +182,10 @@
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
+  /* reset nowrap từ .cardsshelf-scroller-list để chữ trong card được xuống dòng */
+  white-space: normal;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
   &:hover {
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.1);
     transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
@@ -180,6 +193,60 @@
   }
   cursor: pointer;
   font-style: normal;
+}
+
+/* =============================================
+   CARDSSHELF PADDLE NAV (PC)
+   ============================================= */
+
+.cardsshelf-paddlenav {
+  position: relative;
+}
+
+.cardsshelf-paddlenav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 55px;
+  height: 55px;
+  border-radius: 999px;
+  border: 0;
+  background: rgba(210, 210, 215, 0.64);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 160ms ease, transform 160ms ease, background 160ms ease;
+  z-index: 5;
+}
+
+.cardsshelf-paddlenav:hover .cardsshelf-paddlenav-arrow {
+  opacity: 1;
+}
+
+.cardsshelf-paddlenav-arrow:hover {
+  background: rgba(225, 225, 230, 0.64);
+  /* transform: translateY(-50%) scale(1.04); */
+}
+
+.cardsshelf-paddlenav-arrow:disabled {
+  opacity: 0;
+  cursor: default;
+}
+
+.cardsshelf-paddlenav-arrow.prev {
+  left: 1.25rem;
+}
+
+.cardsshelf-paddlenav-arrow.next {
+  right: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .cardsshelf-paddlenav-arrow {
+    display: none;
+  }
 }
 
 .cardsshelf-item-header-container {
@@ -209,6 +276,7 @@
   font-size: 28px;
   font-weight: 600;
   color: #fff;
+  max-width: 20rem;
 }
 
 .cardsshelf-subtitle {
@@ -315,4 +383,113 @@
 }
 .dd-highlight {
   color: rgb(8, 130, 124);
+}
+
+
+/* =============================================
+   RESPONSIVE for mobile
+   ============================================= */
+
+@media (max-width: 768px) {
+  .header-shop {
+    padding: 2.5rem 1.25rem 1.5rem;
+    display: block;
+    
+  }
+  .left-header-shop {
+    font-size: 48px;
+    padding-right: 0rem;
+    letter-spacing: 0;
+  }
+
+  .right-header-shop-text-container{
+    padding-right: 0;
+  }
+  .space-box{
+    display: none;
+  }
+  .right-header-shop {
+    margin-top: 1.5rem;
+    font-size: 12px;
+    text-align: left;
+  }
+  .right-header-shop-text {
+    font-size: 20px;
+  }
+  .right-header-shop-link {
+    font-size: 14px;
+    float: left;
+    margin-top: 1rem;
+    margin-right: 0;
+  }
+
+  /* =============================================
+   PRODUCT LIST
+   ============================================= */
+  .section-productnav {
+    padding: 0 1.25rem;
+  }
+
+  .product-list {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .product-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .product-item {
+    flex: 0 0 auto;
+    width: 5.5rem;
+    height: auto;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .product-item img {
+    width: 100%;
+    height: 3.5rem;
+    object-fit: contain;
+  }
+
+  .product-item-text {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  /* =============================================
+   CARDSSHELF (Trợ giá cho giáo dục)
+   ============================================= */
+  .section-cardsshelf {
+    margin-left: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0 1.25rem;
+  }
+
+  .cardsshelf-header-container {
+    margin-left: 0;
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .cardsshelf-scroller-list {
+    padding-left: 0;
+    gap: 1rem;
+  }
+
+  .cardsshelf-image {
+    width: 18rem;
+    height: 22rem;
+  }
+
+  .cardsshelf-title {
+    font-size: 22px;
+    max-width: 16rem;
+  }
 }

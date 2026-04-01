@@ -12,7 +12,7 @@ export function createCardsshelf(productItem) {
     </div>
     ${productItem.tag ? `<div class="cardsshelf-tag">Mới</div>` : ""}
       <div class="cardsshelf-title">${productItem.title}</div>
-      <div class="cardsshelf-subtitle">${productItem.subtitle}</div>
+      ${productItem.subtitle ? `<div class="cardsshelf-subtitle">${productItem.subtitle}</div>` : ""}
       <div class="cardsshelf-description">${productItem.description}</div>
     </div>
     <div class="cardsshelf-image">
